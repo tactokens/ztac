@@ -1,0 +1,21 @@
+[package]
+name = "ztac_jni"
+version = "0.1.0"
+authors = ["Igor Gulamov <igor.gulamov@gmail.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+name = "ztac_jni"
+
+[dependencies]
+bellman = { version = "0.1.0" }
+ztac_primitives = { path = "../ztac_primitives"}
+sapling-crypto = { path = "../sapling-crypto" }
+pairing = "0.14"
+num = "0.2"
+serde = { version = "1.0", features = ["derive"] }
+base64 = "0.11.0"
+jni = "0.14.0"
+byteorder = "1"
+rand = "0.4"

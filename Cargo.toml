@@ -1,0 +1,19 @@
+[workspace]
+members = [
+  "ztac_primitives",
+  "ztac_circuit",
+  "ztac_jni",
+  "sapling-crypto",
+  "ztac_setup",
+  "ztac_node/native"
+]
+
+[profile.release]
+lto = true
+panic = 'abort'
+codegen-units = 1
+
+[profile.dev]
+lto = true
+panic = 'abort'
+codegen-units = 8
